@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="lib/bmi.js"></script>
+        <script src="lib/leap-year.js"></script>
+        <script src="lib/multiplication-table.js"></script>
+        <script src="lib/temp.js"></script>
+        <script src="lib/age.js"></script>
+        <script src="lib/password.js"></script>
+    </head>
+    <body>
+        <h1>test js 0915</h1>
+        <section class="bmi">
+            <h2>1. 算出BMI</h2>
+            <div class="section-block">
+                <h3>請輸入您的身高體重</h3>
+                <form id="bmi-form">
+                    <div class="input-box">
+                        <label for="bmi-height">身高:</label>
+                        <input
+                            type="number"
+                            name="bmi-height"
+                            id="bmi-height"
+                            min="0"
+                            step="0.01"
+                        />cm
+                    </div>
+                    <div class="input-box">
+                        <label for="weight">體重:</label>
+                        <input
+                            type="number"
+                            name="weight"
+                            id="bmi-weight"
+                            min="0"
+                            step="0.01"
+                        />kg
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="計算BMI" />
+                    </div>
+                </form>
+            </div>
+            <div class="section-block">
+                <h3>結果</h3>
+                <div class="result-container">
+                    <div class="result-box">
+                        <div class="result">
+                            <div>BMI =</div>
+                            <div id="bmi-result">尚未有結果</div>
+                        </div>
+                        <div class="comment">體重(公斤)/身高(公尺)的平方</div>
+                    </div>
+                    <div>BMI ＜ 18.5：過輕</div>
+                    <div>18.5 ≦ BMI ＜ 24：正常</div>
+                    <div>24 ≦ BMI ＜ 27：過重</div>
+                    <div>27 ≦ BMI ＜ 30：輕度肥胖</div>
+                    <div>30 ≦ BMI ＜ 35：中度肥胖</div>
+                    <div>BMI ≧ 35：重度肥胖</div>
+                </div>
+            </div>
+        </section>
+        <section class="leap-year">
+            <h2>2. 判斷是否為閏年</h2>
+            <div class="section-block">
+                <h3>請輸入西元年份</h3>
+                <form id="leap-year-form">
+                    <div class="input-box">
+                        <label for="leap-year-year">西元</label>
+                        <input type="number" min="0" id="leap-year-year" />年
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="判斷" />
+                    </div>
+                </form>
+            </div>
+            <div class="section-block">
+                <h3>結果</h3>
+                <div class="result">
+                    <div id="leap-year-result">尚未有結果</div>
+                </div>
+            </div>
+        </section>
+        <section class="multiplication-table">
+            <h2>3. 畫出九九乘法表</h2>
+            <div class="result">
+                <div id="multiplication-table-result"></div>
+            </div>
+        </section>
+        <section class="temp">
+            <h2>4. 轉換溫度</h2>
+            <div class="section-block">
+                <h3>請輸入溫度與單位</h3>
+                <form id="temp-form">
+                    <div class="input-box">
+                        <label for="temp-degree">溫度</label>
+                        <input
+                            type="number"
+                            name="temp-degree"
+                            id="temp-degree"
+                        />
+                    </div>
+                    <select name="temp-unit" id="temp-unit">
+                        <option value="c">攝氏 (˚C)</option>
+                        <option value="f">華氏 (˚F)</option>
+                    </select>
+                    <div class="input-box">
+                        <input type="submit" value="轉換溫度" />
+                    </div>
+                </form>
+            </div>
+            <div class="section-block">
+                <h3>結果</h3>
+                <div class="result">
+                    <div id="temp-result">尚未有結果</div>
+                </div>
+            </div>
+        </section>
+        <section class="age">
+            <h2>5. 生日計算歲數</h2>
+            <div class="section-block">
+                <h3>請輸入出生 年, 月, 日</h3>
+                <form id="age-form">
+                    <div class="input-box">
+                        <input
+                            type="month"
+                            name="age-month"
+                            id="age-month"
+                            value="2023-09"
+                        />
+                    </div>
+                    <div class="input-box">
+                        <select name="age-date" id="age-date"></select>
+                        <label for="age-date">日</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="計算歲數" />
+                    </div>
+                </form>
+            </div>
+            <div class="section-block">
+                <h3>結果</h3>
+                <div class="result">
+                    <div id="age-result">尚未有結果</div>
+                </div>
+            </div>
+        </section>
+        <section class="password">
+            <h2>6. 驗證密碼格式</h2>
+            <div class="section-block">
+                <h3>請輸入密碼</h3>
+                <form id="password-form">
+                    <div class="input-box">
+                        <input type="text" name="password" id="password-text" />
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="password-submit" />
+                    </div>
+                </form>
+            </div>
+            <div class="section-block">
+                <h3>結果</h3>
+                <div class="result">
+                    <div id="password-result">尚未有結果</div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

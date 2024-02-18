@@ -1,0 +1,122 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #555;
+}
+
+body {
+    padding: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    h1 {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    section {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .section-block {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        .input-box {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 5px;
+            input {
+                height: 1.6rem;
+            }
+            input[type="number"] {
+                width: 100px;
+                padding-left: 5px;
+            }
+            input[type="text"] {
+                padding-left: 5px;
+            }
+            input[type="month"] {
+                padding: 0 10px;
+            }
+            input[type="submit"] {
+                padding: 0 20px;
+            }
+        }
+        select {
+            height: 1.6rem;
+            padding: 0 10px;
+        }
+    }
+    .result {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+        color: coral;
+        border: coral solid 1px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        gap: 10px;
+        width: max-content;
+        > div {
+            width: max-content;
+            color: coral;
+            display: flex;
+            line-height: 1rem;
+        }
+    }
+}
+
+.bmi {
+    .result-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        .result-box {
+            display: flex;
+            flex-direction: row;
+            justify-self: start;
+            align-items: center;
+            gap: 5px;
+
+            .comment {
+                color: #bbb;
+            }
+        }
+    }
+}
+
+.multiplication-table {
+    .col {
+        border: solid coral 1px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 5px;
+        &:not(:first-child) {
+            margin-left: -1px;
+        }
+        .item {
+            color: coral;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #555;
+}
+
+body {
+  padding: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+body h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+body section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body section .section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body form {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+body form .input-box {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+body form .input-box input {
+  height: 1.6rem;
+}
+body form .input-box input[type=number] {
+  width: 100px;
+  padding-left: 5px;
+}
+body form .input-box input[type=text] {
+  padding-left: 5px;
+}
+body form .input-box input[type=month] {
+  padding: 0 10px;
+}
+body form .input-box input[type=submit] {
+  padding: 0 20px;
+}
+body form select {
+  height: 1.6rem;
+  padding: 0 10px;
+}
+body .result {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+  color: coral;
+  border: coral solid 1px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  gap: 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+body .result > div {
+  width: -moz-max-content;
+  width: max-content;
+  color: coral;
+  display: flex;
+  line-height: 1rem;
+}
+
+.bmi .result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.bmi .result-container .result-box {
+  display: flex;
+  flex-direction: row;
+  justify-self: start;
+  align-items: center;
+  gap: 5px;
+}
+.bmi .result-container .result-box .comment {
+  color: #bbb;
+}
+
+.multiplication-table .col {
+  border: solid coral 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.multiplication-table .col:not(:first-child) {
+  margin-left: -1px;
+}
+.multiplication-table .col .item {
+  color: coral;
+}/*# sourceMappingURL=index.css.map */
