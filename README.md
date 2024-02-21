@@ -4,15 +4,15 @@
 
 [01-JS-practise](https://wenling7777777.github.io/JavaScript/01-JS-practise/index.html)
 
-01.算出BMI
+*算出BMI
 
-02.判斷是否為閏年
+*判斷是否為閏年
 
-03.畫出九九乘法表
+*畫出九九乘法表
 
-04.轉換溫度
+*轉換溫度
 
-05.用出生日計算歲數
+*用出生日計算歲數
 
-06.驗證密碼格式
+*驗證密碼格式
 
